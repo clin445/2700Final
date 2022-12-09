@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav class="sidebar w3-sidebar w3-bar-block w3-small w3-center">
+        <img src="img/better_logo_maybe.png" style="width:100%">
+        <hr>
+        <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+          <i class="fa fa-home w3-xxlarge"></i>
+          <p>Home</p>
+        </a>
+        <hr>
+        <a href="about.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+          <i class="fa fa-user w3-xxlarge"></i>
+          <p>About</p>
+        </a>
+        <hr>
+        <a href="portfolio.html" class="w3-bar-item w3-button w3-padding-large w3-black">
+          <i class="fa fa-laptop w3-xxlarge"></i>
+          <p>Portfolio</p>
+        </a>
+        <hr>
+        <a href="contact.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+          <i class="fa fa-envelope w3-xxlarge"></i>
+          <p>Contact</p>
+        </a>
+        <hr>
+    </nav>
+
+    <div class="current-projects"> 
+      <div class="w3-container" style="margin-left: 100px; margin-right: 100px;">
+        <h2>Current Projects</h2>
+        <hr>
+        <p>Here are some of the projects that I am working on at the moment.</p>
+      </div>
+
+      <br>
+      <div style="margin-left: 100px; margin-right: 100px;">
+        <div class="column">
+          <img src="img/blender_proj1.jpg" style="width:100%">
+          <div class="caption w3-large w3-container w3-white">
+            This is a blender project that I am working on
+          </div>
+        </div>
+        
+        <div class="column">
+          <img src="img/current2.jpg" style="width:100%">
+          <div class="caption w3-large w3-container w3-white">
+            This is Willow, a game that I am working on
+          </div>
+        </div>
+        
+        <div class="column">
+          <img src="img/current3.jpg" style="width:100%">
+          <div class="caption w3-large w3-container w3-white">
+            This is the website I am currently making
+          </div>
+        </div>
+        
+      </div>
+      
+    </div>
+
+     <div class="completed-works">
+      <div class="w3-container" style="margin-left: 100px; margin-right: 100px;" >
+        <h2>Completed Projects</h2>
+        <hr>
+        <p>Here are some of the projects that I have taken part of and are now complete!</p>
+      </div>
+
+      <br>
+
+      <div style="margin-left: 100px; margin-right: 100px;">
+      
+        <div class="column2">
+          <img src="img/completed1" style="width:100%">
+          <div class="caption w3-large w3-container w3-white">
+             Paper Planes: I worked on the cut scene art for this game. This was my first experience with pixel art and working on game.
+          </div>
+        </div>
+        
+        <div class="column2">
+          <img src="img/completed2" style="width:100%">
+          <div class="caption w3-large w3-container w3-white">
+            Paper Planes: Part 2/3 of the cut scene art I did.
+          </div>
+        </div>
+        
+        <div class="column2">
+          <img src="img/completed3" style="width:100%">
+          <div class="caption w3-large w3-container w3-white">
+            Paper Planes: Part 3/3 of the cut scene art I did.
+          </div>
+        </div>
+      
+      </div>
+
+
+     </div>
+    
+    
+     <script>
+      var slideIndex = [1,1];
+      var slideId = ["mySlides", "mySlides2"]
+      showDivs(1, 0);
+      showDivs(1, 1);
+      
+      function plusDivs(n, no) {
+        showDivs(slideIndex[no] += n, no);
+      }
+      
+      function showDivs(n, no) {
+        var i;
+        var x = document.getElementsByClassName(slideId[no]);
+        if (n > x.length) {slideIndex[no] = 1}
+        if (n < 1) {slideIndex[no] = x.length}
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+        }
+        x[slideIndex[no]-1].style.display = "block";  
+      }
+      </script>
+      
+      
+    
+</body>
+</html>
